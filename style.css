@@ -1,0 +1,142 @@
+*{
+  box-sizing:border-box;
+}
+header{
+  background: green; 
+  padding: 10px;
+  
+}
+
+header > h1{
+  text-align: center;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 50px;
+}
+
+table{ 
+  margin: 10px;
+  margin-left: 50px; 
+  position: absolute;
+  box-shadow: 10px 10px grey;
+}
+
+div{
+  position: absolute;
+  left: 690px;
+  width:500px;
+  height: 500px;
+}
+
+div > p, li{
+  font-size: 18px;
+}
+
+.result{
+  position: static;
+  height: 250px;
+  margin-top:10px;
+  border:solid;
+  border-color: green; 
+  box-shadow: 10px 10px grey;
+
+}
+
+.result > p{
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+#result_img{
+  display:inline-flex;
+  margin-left:175px;
+  margin-top:-20px;
+}
+
+#grad1 {
+  height: 175px;
+  background-color: red;
+  background-image: linear-gradient(	#033807,#e3a000); 
+}
+
+/* button animations: */
+.button {
+  border-radius: 4px;
+  background-color: green;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 16px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+input[value]{
+  opacity: 0.5;
+  color:salmon;
+}
+
+tr:first-child td{ 
+  border-top-color: green;
+}
+
+tr:nth-child(3n) td{
+  border-bottom-color: green;
+}
+
+td{
+  border: 1px solid lightgrey;
+  height: 40px;
+  width: 40px;
+}
+
+td:first-child{
+  border-left-color: green;
+}
+
+td:nth-child(3n){
+  border-right-color: green;
+}
+
+input{
+  padding: 0; 
+  text-align: center;
+  border: 0; 
+  height: 60px; 
+  width: 60px; 
+  text-align: center; 
+  font-size: 16px;
+}
+
+input:hover{
+  background: #eee; 
+}

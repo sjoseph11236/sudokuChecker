@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SudoKu Checker</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id='grad1'>
+      <h1>Sudoku Checker</h1>
+  </header>
+
+  <table width="450" height="450"> 
+    <tbody>
+        <!-- <!-- user inputs  -->
+      <tr>
+        <td><input type="text" value= "8" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText0'/></td>
+        <td><input type="text" value= "9" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText1'/></td>
+        <td><input type="text" value= "5" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText2'/></td>
+        <td><input type="text" value= "7" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText3'/></td>
+        <td><input type="text" value= "4" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText4'/></td>
+        <td><input type="text" value= "2" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText5'/></td>
+        <td><input type="text" value= "1" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText6'/></td>
+        <td><input type="text" value= "3" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText7'/></td>
+        <td><input type="text" value= "6" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText8'/></td>
+      </tr>
+      <tr>
+        <td><input type="text" value= "2" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText9'/></td>
+        <td><input type="text" value= "7" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText10'/></td>
+        <td><input type="text" value= "1" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText11'/></td>
+        <td><input type="text" value= "9" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText12'/></td>
+        <td><input type="text" value= "6" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText13'/></td>
+        <td><input type="text" value= "3" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText14'/></td>
+        <td><input type="text" value= "4" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText15'/></td>
+        <td><input type="text" value= "8" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText16'/></td>
+        <td><input type="text" value= "5" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText17'/></td>
+      </tr>
+      <tr>
+        <td><input type="text" value= "4" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText18'/></td>
+        <td><input type="text" value= "6" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText19'/></td>
+        <td><input type="text" value= "3" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText20'/></td>
+        <td><input type="text" value= "5" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText21'/></td>
+        <td><input type="text" value= "8" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText22'/></td>
+        <td><input type="text" value= "1" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText23'/></td>
+        <td><input type="text" value= "7" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText24'/></td>
+        <td><input type="text" value= "9" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText25'/></td>
+        <td><input type="text" value= "2" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText26'/></td>
+      </tr>
+      <tr>
+        <td><input type="text" value= "9" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText27'/></td>
+        <td><input type="text" value= "3" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText28'/></td>
+        <td><input type="text" value= "4" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText29'/></td>
+        <td><input type="text" value= "6" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText30'/></td>
+        <td><input type="text" value= "1" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText31'/></td>
+        <td><input type="text" value= "7" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText32'/></td>
+        <td><input type="text" value= "2" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText33'/></td>
+        <td><input type="text" value= "5" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText34'/></td>
+        <td><input type="text" value= "8" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText35'/></td>
+      </tr>
+      <tr>
+        <td><input type="text" value= "5" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText36'/></td>
+        <td><input type="text" value= "1" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText37'/></td>
+        <td><input type="text" value= "7" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText38'/></td>
+        <td><input type="text" value= "2" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText39'/></td>
+        <td><input type="text" value= "3" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText40'/></td>
+        <td><input type="text" value= "8" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText41'/></td>
+        <td><input type="text" value= "9" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText42'/></td>
+        <td><input type="text" value= "6" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText43'/></td>
+        <td><input type="text" value= "4" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText44'/></td>
+      </tr>
+      <tr>
+        <td><input type="text" value= "6" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText45'/></td>
+        <td><input type="text" value= "8" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText46'/></td>
+        <td><input type="text" value= "2" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText47'/></td>
+        <td><input type="text" value= "4" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText48'/></td>
+        <td><input type="text" value= "5" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText49'/></td>
+        <td><input type="text" value= "9" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText50'/></td>
+        <td><input type="text" value= "3" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText51'/></td>
+        <td><input type="text" value= "7" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText52'/></td>
+        <td><input type="text" value= "1" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText53'/></td>
+      </tr>
+      <tr>
+        <td><input type="text" value= "1" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText54'/></td>
+        <td><input type="text" value= "5" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText55'/></td>
+        <td><input type="text" value= "9" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText56'/></td>
+        <td><input type="text" value= "8" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText57'/></td>
+        <td><input type="text" value= "7" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText58'/></td>
+        <td><input type="text" value= "4" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText59'/></td>
+        <td><input type="text" value= "6" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText60'/></td>
+        <td><input type="text" value= "2" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText61'/></td>
+        <td><input type="text" value= "3" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText62'/></td>
+      </tr>
+      <tr>
+        <td><input type="text" value= "7" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText63'/></td>
+        <td><input type="text" value= "4" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText64'/></td>
+        <td><input type="text" value= "6" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText65'/></td>
+        <td><input type="text" value= "3" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText66'/></td>
+        <td><input type="text" value= "2" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText67'/></td>
+        <td><input type="text" value= "5" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText68'/></td>
+        <td><input type="text" value= "8" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText69'/></td>
+        <td><input type="text" value= "1" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText70'/></td>
+        <td><input type="text" value= "9" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText71'/></td>
+      </tr>
+      <tr>
+        <td><input type="text" value= "3" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText72'/></td>
+        <td><input type="text" value= "2" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText73'/></td>
+        <td><input type="text" value= "8" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText74'/></td>
+        <td><input type="text" value= "1" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText75'/></td>
+        <td><input type="text" value= "9" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText76'/></td>
+        <td><input type="text" value= "6" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText77'/></td>
+        <td><input type="text" value= "5" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText78'/></td>
+        <td><input type="text" value= "4" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText79'/></td>
+        <td><input type="text" value= "7" maxlength="1"  oninput="noZeros(this)" onclick="changeOpacity(this)" id='inputText80'/></td>
+      </tr>
+    </tbody>
+  </table> 
+
+<!-- This is checker information -->
+  <div>
+    <h3>Sudoku Rules:</h3>
+    <p>Sudoku is a logic puzzle played on a 9x9 grid subdivided into 9 3x3 subgrids.<br><br>Check your puzzle following these rules:</p>
+    <ol>
+      <li>Each column must contain the numbers 1-9 (no repeats!)</li>
+      <li>Each row must contain the numbers 1-9 (no repeats!)</li>
+      <li>Each 3x3 subgrid must contain the numbers 1-9 (no repeats!)</li>
+    </ol>
+
+    <!-- These are butttons: -->
+    <button class="button" type="submit" onclick="getInputs()"><span>Submit</span></button>
+    <button class="button" type="reset" onclick="reset()"><span>Reset</span></button>
+
+    <div class="result">
+      <p></p>
+      <img id="result_img" src="" height="60%"> 
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
