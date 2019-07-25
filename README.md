@@ -1,4 +1,4 @@
-# Project: 
+## Project: 
 
 - Sudoku is a logic puzzle played on a 9x9 grid subdivided into 9 3x3 subgrids.This checker uses HTML,CSS and Javascript. I added images and button animation. Check your puzzle following these rules:
 
