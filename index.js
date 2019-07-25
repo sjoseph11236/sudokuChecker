@@ -1,7 +1,7 @@
 // Create a variable to update result: 
 let result_p = document.querySelector(".result > p");
 // Create a variable to store result_Img:
-let result_img = document.getElementById("result_img")
+let result_img = document.getElementById("result_img");
 // Create a multi-dimensional array with intaial values of null to store user input:
 let puzzle = [[null,null,null, null,null,null, null,null,null],
               [null,null,null, null,null,null, null,null,null],
